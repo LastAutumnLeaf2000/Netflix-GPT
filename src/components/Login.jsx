@@ -7,18 +7,22 @@ const Login = () => {
   const [signIn, setsignIn] = useState(true);
   const [err, seterr] = useState(null);
 
-  const email = useRef(null);//set them as null and not "" 
+  const email = useRef(null); //set them as null and not ""
   const password = useRef(null);
   const name = useRef(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(email?.current?.value);
-    console.log(password?.current?.value);
-    console.log(name?.current?.value);
+    // console.log(email?.current?.value);
+    // console.log(password?.current?.value);
+    // console.log(name?.current?.value);
     // checkValidation(email, password)
     // console.log(email);
-    const error = checkValidation(email.current.value, password.current.value,name.current.value);
+    const error = checkValidation(
+      email?.current?.value,
+      password?.current?.value,
+      name?.current?.value //very important to give (?.)- doesnt throw error
+    );
     seterr(error);
   };
 
