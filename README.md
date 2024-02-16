@@ -26,3 +26,18 @@
 -Sign Up Form
 -Form Validation
 -useRef Hook
+-Firebase Setup
+-Deployed to Production
+-Sign in / Sign up / Sign Out API
+-Redux Store with userSlice carrying user Details after login
+-fetch movie data from Now Playing section inside TMDB
+     -Browse Component(Structure)
+        -Main Container
+          -Video Background
+          -Video Title
+        -Secondary Container
+          -Movie List 
+            -Cards
+-Custom Hooks for fetching data
+-Embed youtube video
+       
